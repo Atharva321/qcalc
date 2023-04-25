@@ -1,3 +1,3 @@
-class ScientificCalculator {
+class ScientificCalculator extends StandardCalculator {
 
 }
