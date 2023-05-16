@@ -80,7 +80,7 @@ public class StandardCalculatorTest {
     void testMultiplicationOperation(){
         standardCalculator.multiply(9,9);
         int actualResult = (int)standardCalculator.getResult();
-        Assertions.assertEquals(72, actualResult);
+        Assertions.assertEquals(81, actualResult);
     }
 
     @Test
