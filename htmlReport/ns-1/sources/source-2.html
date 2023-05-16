@@ -1,0 +1,138 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > QcalcApplication</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.crio.qcalc</a>
+</div>
+
+<h1>Coverage Summary for Class: QcalcApplication (com.crio.qcalc)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">QcalcApplication</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    94.4%
+  </span>
+  <span class="absValue">
+    (17/18)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package com.crio.qcalc;
+&nbsp;
+&nbsp;// import org.springframework.boot.SpringApplication;
+&nbsp;import org.springframework.boot.autoconfigure.SpringBootApplication;
+&nbsp;
+&nbsp;@SpringBootApplication
+<b class="nc">&nbsp;public class QcalcApplication {</b>
+&nbsp;
+&nbsp;	public static void main(String[] args) {
+&nbsp;		// SpringApplication.run(QcalcApplication.class, args);
+&nbsp;		// System.out.println(&quot;Finally Code is Running.........&quot;);
+<b class="fc">&nbsp;		StandardCalculator calc = new StandardCalculator();</b>
+&nbsp;		
+<b class="fc">&nbsp;		calc.add(18, 9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+<b class="fc">&nbsp;		calc.add(1.8, 0.9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+&nbsp;		
+<b class="fc">&nbsp;		calc.subtract(18,9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+<b class="fc">&nbsp;		calc.subtract(1.8, 0.9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+&nbsp;
+<b class="fc">&nbsp;		calc.multiply(18, 9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+<b class="fc">&nbsp;		calc.multiply(1.8, 0.9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+&nbsp;
+<b class="fc">&nbsp;		calc.divide(18, 9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+<b class="fc">&nbsp;		calc.divide(1.8, 0.9);</b>
+<b class="fc">&nbsp;		System.out.println(calc.getResult());</b>
+&nbsp;	}
+&nbsp;
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-05-16 11:01</div>
+</div>
+</body>
+</html>
